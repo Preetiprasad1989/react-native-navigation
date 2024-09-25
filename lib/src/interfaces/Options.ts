@@ -907,7 +907,22 @@ export interface OptionsBottomTabs {
   /**
    * Control the shadow of the Bottom tabs bar
    */
-  shadow?: ShadowOptions;
+   shadow?: ShadowOptions;
+   /**
+   * Controls whether tab is animated ios or not default false
+   * @default true
+   */
+  animateTabBarButton?: boolean;
+   /**
+   * Controls type of animation tab is animated default its slide
+   * @default true
+   */
+  animationType?:"jump"|"slide"|"hightlight";
+   /**
+   * Controls background color of animation tab
+   * @default true
+   */
+   colorForAnimatingBackground?:Color;
 }
 
 export interface ShadowOptions {

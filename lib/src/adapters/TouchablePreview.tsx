@@ -4,8 +4,6 @@ import {
   View,
   Platform,
   findNodeHandle,
-  TouchableOpacity,
-  TouchableHighlight,
   TouchableNativeFeedback,
   TouchableWithoutFeedback,
   GestureResponderEvent,
@@ -22,8 +20,6 @@ interface GestureResponderEventWithForce extends NativeSyntheticEvent<NativeTouc
 export interface Props {
   children?: React.ReactNode;
   touchableComponent?:
-    | TouchableHighlight
-    | TouchableOpacity
     | TouchableNativeFeedback
     | TouchableWithoutFeedback
     | React.ReactNode;

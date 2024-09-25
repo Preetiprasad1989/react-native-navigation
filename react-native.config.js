@@ -13,5 +13,8 @@ module.exports = {
     android: {
       sourceDir: './playground/android/',
     },
+    ios:{
+      sourceDir: './playground/ios/',
+    }
   },
 };

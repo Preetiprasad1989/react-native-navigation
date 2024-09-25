@@ -23,6 +23,9 @@
 @property(nonatomic, strong) Number *borderWidth;
 @property(nonatomic, strong) RNNShadowOptions *shadow;
 @property(nonatomic, strong) BottomTabsAttachMode *tabsAttachMode;
+@property(nonatomic, strong) Text *animationType;
+@property(nonatomic, strong) Bool *animateTabBarButton;
+@property(nonatomic, strong) Color *colorForAnimatingBackground;
 
 - (BOOL)shouldDrawBehind;
 

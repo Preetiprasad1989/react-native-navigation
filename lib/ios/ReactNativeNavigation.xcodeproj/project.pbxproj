@@ -469,6 +469,9 @@
 		B8B2BB6624FFCC9500FC6575 /* CornerRadiusTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B2BB6424FFCC9500FC6575 /* CornerRadiusTransition.m */; };
 		C2A57A1C21E815F80066711C /* InteractivePopGestureDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A57A1A21E815F80066711C /* InteractivePopGestureDelegate.h */; };
 		C2A57A1D21E815F80066711C /* InteractivePopGestureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A57A1B21E815F80066711C /* InteractivePopGestureDelegate.m */; };
+		DD61AEB12CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61AEAF2CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.m */; };
+		DD61AEB22CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD61AEB02CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.h */; };
+		DD61AEB42CA3D71A0026B0CC /* RNNEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = DD61AEB32CA3D71A0026B0CC /* RNNEnums.h */; };
 		E33AC20020B5BA0B0090DB8A /* RNNSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33AC1FF20B5BA0B0090DB8A /* RNNSplitViewController.m */; };
 		E33AC20820B5C4F90090DB8A /* RNNSplitViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E33AC20720B5C4F90090DB8A /* RNNSplitViewOptions.m */; };
 		E3458D3E20BD9CE40023149B /* RNNPreviewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3458D3D20BD9CE40023149B /* RNNPreviewOptions.m */; };
@@ -1020,6 +1023,9 @@
 		C2A57A1A21E815F80066711C /* InteractivePopGestureDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractivePopGestureDelegate.h; sourceTree = "<group>"; };
 		C2A57A1B21E815F80066711C /* InteractivePopGestureDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractivePopGestureDelegate.m; sourceTree = "<group>"; };
 		D8AFADBD1BEE6F3F00A4592D /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeNavigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD61AEAF2CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNBottomTabsAnimatedController.m; sourceTree = "<group>"; };
+		DD61AEB02CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNBottomTabsAnimatedController.h; sourceTree = "<group>"; };
+		DD61AEB32CA3D71A0026B0CC /* RNNEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNEnums.h; sourceTree = "<group>"; };
 		E33AC1FF20B5BA0B0090DB8A /* RNNSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNNSplitViewController.m; sourceTree = "<group>"; };
 		E33AC20120B5BA550090DB8A /* RNNSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNNSplitViewController.h; sourceTree = "<group>"; };
 		E33AC20620B5C49E0090DB8A /* RNNSplitViewOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNNSplitViewOptions.h; sourceTree = "<group>"; };
@@ -1185,6 +1191,8 @@
 		5012242C2173E0A4000F5F98 /* Parent ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD61AEB02CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.h */,
+				DD61AEAF2CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.m */,
 				50F5DFBF1F407A8C001A00BC /* RNNBottomTabsController.h */,
 				50F5DFC01F407A8C001A00BC /* RNNBottomTabsController.m */,
 				50F5DFC31F407AA0001A00BC /* RNNStackController.h */,
@@ -1779,6 +1787,7 @@
 		E5F6C39B22DB4CB90093C2CE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DD61AEB32CA3D71A0026B0CC /* RNNEnums.h */,
 				E5F6C39C22DB4D0E0093C2CE /* UIColor+RNNUtils.h */,
 				E5F6C3A022DB4D0F0093C2CE /* UIColor+RNNUtils.m */,
 				E5F6C3A122DB4D0F0093C2CE /* UITabBarController+RNNUtils.h */,
@@ -1940,6 +1949,7 @@
 				B8B2BB6524FFCC9500FC6575 /* CornerRadiusTransition.h in Headers */,
 				50588B8C23AAC2FF001F6A5E /* DisplayLinkAnimation.h in Headers */,
 				50F5DFC51F407AA0001A00BC /* RNNStackController.h in Headers */,
+				DD61AEB22CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.h in Headers */,
 				50BAFE4B2399405800798674 /* RNNExternalViewController.h in Headers */,
 				503A8A2523BD04410094D1C4 /* ElementTransitionsCreator.h in Headers */,
 				5047E4F42267568800908DD3 /* RNNExternalComponentStore.h in Headers */,
@@ -1957,6 +1967,7 @@
 				506BF6982600B72D00A22755 /* UIImageView+Transition.h in Headers */,
 				E8A430111F9CB87B00B61A20 /* ElementAlphaTransition.h in Headers */,
 				5017D9E1239D2C6C00B74047 /* BottomTabsAttachModeFactory.h in Headers */,
+				DD61AEB42CA3D71A0026B0CC /* RNNEnums.h in Headers */,
 				E5F6C3AC22DB4D0F0093C2CE /* UITabBarController+RNNUtils.h in Headers */,
 				5038A3C6216E2D93009280BC /* Number.h in Headers */,
 				503A8A0123BB7B810094D1C4 /* ElementAnimator.h in Headers */,
@@ -2414,6 +2425,7 @@
 				21B85E5D1F44480200B314B5 /* RNNButtonsPresenter.m in Sources */,
 				E8E518371F83B94A000467AC /* RNNViewLocation.m in Sources */,
 				E3458D3E20BD9CE40023149B /* RNNPreviewOptions.m in Sources */,
+				DD61AEB12CA3D6A00026B0CC /* RNNBottomTabsAnimatedController.m in Sources */,
 				5012242B217372B3000F5F98 /* ImageParser.m in Sources */,
 				50ACB2CD2525FC7400ABDBE2 /* RNNScreenTransitionsCreator.m in Sources */,
 				30987AB5137F264FA06DA289 /* DotIndicatorOptions.m in Sources */,
@@ -2602,7 +2614,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeNavigation;
@@ -2620,7 +2632,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeNavigation;

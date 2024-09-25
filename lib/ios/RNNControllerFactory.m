@@ -8,6 +8,7 @@
 #import "RNNSplitViewController.h"
 #import "RNNStackController.h"
 #import "RNNTopTabsViewController.h"
+#import "RNNBottomTabsAnimatedController.h"
 
 @implementation RNNControllerFactory {
     id<RNNComponentViewCreator> _creator;
@@ -184,6 +185,7 @@
     return stack;
 }
 
+
 - (UIViewController *)createBottomTabs:(RNNLayoutNode *)node {
     RNNLayoutInfo *layoutInfo = [[RNNLayoutInfo alloc] initWithNode:node];
     RNNNavigationOptions *options =
@@ -196,19 +198,32 @@
     RNNDotIndicatorPresenter *dotIndicatorPresenter =
         [[RNNDotIndicatorPresenter alloc] initWithDefaultOptions:_defaultOptions];
     BottomTabsBaseAttacher *bottomTabsAttacher = [_bottomTabsAttachModeFactory fromOptions:options];
-
-    return [[RNNBottomTabsController alloc] initWithLayoutInfo:layoutInfo
-                                                       creator:_creator
-                                                       options:options
-                                                defaultOptions:_defaultOptions
-                                                     presenter:presenter
-                                            bottomTabPresenter:bottomTabPresenter
-                                         dotIndicatorPresenter:dotIndicatorPresenter
-                                                  eventEmitter:_eventEmitter
-                                          childViewControllers:childViewControllers
-                                            bottomTabsAttacher:bottomTabsAttacher];
+    if(options.bottomTabs.animateTabBarButton.get){
+        return [[RNNBottomTabsAnimatedController alloc] initWithLayoutInfo:layoutInfo
+                                                           creator:_creator
+                                                           options:options
+                                                    defaultOptions:_defaultOptions
+                                                         presenter:presenter
+                                                bottomTabPresenter:bottomTabPresenter
+                                             dotIndicatorPresenter:dotIndicatorPresenter
+                                                      eventEmitter:_eventEmitter
+                                              childViewControllers:childViewControllers
+                                                bottomTabsAttacher:bottomTabsAttacher withAnimationType:JUMP];
+    }
+    else{
+        return [[RNNBottomTabsController alloc] initWithLayoutInfo:layoutInfo
+                                                           creator:_creator
+                                                           options:options
+                                                    defaultOptions:_defaultOptions
+                                                         presenter:presenter
+                                                bottomTabPresenter:bottomTabPresenter
+                                             dotIndicatorPresenter:dotIndicatorPresenter
+                                                      eventEmitter:_eventEmitter
+                                              childViewControllers:childViewControllers
+                                                bottomTabsAttacher:bottomTabsAttacher];
+    }
+    
 }
-
 - (UIViewController *)createTopTabs:(RNNLayoutNode *)node {
     RNNLayoutInfo *layoutInfo = [[RNNLayoutInfo alloc] initWithNode:node];
     RNNNavigationOptions *options =
