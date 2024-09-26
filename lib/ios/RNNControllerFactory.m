@@ -208,7 +208,8 @@
                                              dotIndicatorPresenter:dotIndicatorPresenter
                                                       eventEmitter:_eventEmitter
                                               childViewControllers:childViewControllers
-                                                bottomTabsAttacher:bottomTabsAttacher withAnimationType:JUMP];
+                                                bottomTabsAttacher:bottomTabsAttacher withAnimationType:options.bottomTabs.animationType
+         animatingBgColor:options.bottomTabs.colorForAnimatingBackground];
     }
     else{
         return [[RNNBottomTabsController alloc] initWithLayoutInfo:layoutInfo

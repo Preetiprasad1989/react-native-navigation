@@ -12,7 +12,7 @@
 typedef enum animationtype
 	   {
 		   JUMP,
-		   POPP,
-		   BLINK
+		   SLIDE,
+		   NONE
 	   } AnimationType;
 #endif /* RNNEnums_h */

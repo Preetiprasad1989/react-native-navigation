@@ -917,7 +917,7 @@ export interface OptionsBottomTabs {
    * Controls type of animation tab is animated default its slide
    * @default true
    */
-  animationType?:"jump"|"slide"|"hightlight";
+  animationType?:"jump"|"slide"|"none";
    /**
    * Controls background color of animation tab
    * @default true

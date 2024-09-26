@@ -21,5 +21,6 @@
 			 dotIndicatorPresenter:(RNNDotIndicatorPresenter *)dotIndicatorPresenter
 					  eventEmitter:(RNNEventEmitter *)eventEmitter
 			  childViewControllers:(NSArray *)childViewControllers
-				bottomTabsAttacher:(BottomTabsBaseAttacher*)bottomTabsAttacher withAnimationType:(AnimationType)animationType;
+				bottomTabsAttacher:(BottomTabsBaseAttacher*)bottomTabsAttacher withAnimationType:(Text*)animationType
+                  animatingBgColor:(Color*)bgColor;
 @end
